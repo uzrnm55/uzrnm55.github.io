@@ -4,23 +4,23 @@ const Gear: React.FC = () => {
   const gearItems = [
     {
       id: 1,
-      name: 'Panhandle Pirates Team Jersey',
+      name: 'Club T-Shirt',
       image: 'tshirt.jpg',
-      description: 'Official team jersey with embroidered logo and player number customization available. Made from high-quality, breathable fabric perfect for competition and practice.',
+      description: 'Official Panhandle Pirates club t-shirt with embroidered logo. Comfortable cotton blend perfect for practice, games, and casual wear. Available in multiple sizes and colors.',
       category: 'Shirts & Apparel'
     },
     {
       id: 2,
-      name: 'Competition Swim Cap',
-      image: 'centeredLogo.jpg',
-      description: 'High-quality silicone swim cap with team logo, perfect for competitions. Provides excellent fit and durability for intense water polo matches.',
+      name: 'Club Swimsuits',
+      image: 'WaterPolo.jpg',
+      description: 'High-performance club swimsuits designed for water polo. Quick-drying fabric with UV protection and team logo. Available in various styles for men, women, and youth.',
       category: 'Swimwear'
     },
     {
       id: 3,
-      name: 'Team Backpack',
+      name: 'Accessories',
       image: 'centeredLogo.jpg',
-      description: 'Durable backpack with team logo, perfect for carrying gear to practices and competitions. Features multiple compartments and comfortable straps.',
+      description: 'Complete set of water polo accessories including swim caps, goggles, water bottles, and team towels. Everything you need to stay prepared and show your team spirit.',
       category: 'Accessories'
     }
   ];

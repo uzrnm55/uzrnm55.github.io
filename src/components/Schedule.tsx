@@ -41,7 +41,6 @@ const Schedule: React.FC = () => {
       id: 2,
       title: 'Huntsville Saturday Scrimmage',
       date: 'November 8, 2025',
-      time: '10:00 AM - 4:00 PM',
       location: 'Community Aquatic Center',
       address: '567 Pool Street, City, ST 12345',
       type: 'Friendly',
@@ -145,23 +144,19 @@ const Schedule: React.FC = () => {
               {upcomingEvents.map((event) => (
                 <div key={event.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden">
                   {/* Event Header */}
-                  <div 
+                  <div
                     className="p-6 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
                     onClick={() => setExpandedEvent(expandedEvent === event.id ? null : event.id)}
                   >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                      <div className="flex items-center space-x-4 mb-2 sm:mb-0">
                         {getEventIcon(event.type)}
                         <div>
-                          <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{event.title}</h4>
-                          <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-300 mt-1">
+                          <h4 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100">{event.title}</h4>
+                          <div className="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 text-sm text-gray-600 dark:text-gray-300 mt-1">
                             <span className="flex items-center">
                               <Calendar className="w-4 h-4 mr-1" />
                               {event.date}
-                            </span>
-                            <span className="flex items-center">
-                              <Clock className="w-4 h-4 mr-1" />
-                              {event.time}
                             </span>
                             <span className="flex items-center">
                               <MapPin className="w-4 h-4 mr-1" />
@@ -181,7 +176,7 @@ const Schedule: React.FC = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="flex items-center space-x-3">
+                      <div className="flex items-center justify-between sm:justify-end space-x-3 mt-2 sm:mt-0">
                         <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getEventColor(event.type)}`}>
                           {event.type}
                         </span>

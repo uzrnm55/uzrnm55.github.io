@@ -27,8 +27,8 @@ const Hero: React.FC = () => {
                <span>See Schedule</span>
                <ArrowRight size={20} />
              </a>
-             <a href="#contact" className="btn-secondary flex items-center justify-center space-x-2">
-               <span>Contact Us</span>
+             <a href="https://www.facebook.com/profile.php?id=61555120244899#" target="_blank" rel="noopener noreferrer" className="btn-secondary flex items-center justify-center space-x-2">
+               <span>Follow Us</span>
                <ArrowRight size={20} />
              </a>
            </div>
